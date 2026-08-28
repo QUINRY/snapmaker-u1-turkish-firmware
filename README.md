@@ -5,6 +5,20 @@ Snapmaker U1 dokunmatik ekranına Türkçe dil desteği ekleyen bağımsız bir 
 > [!IMPORTANT]
 > Bu proje **resmî değildir**; Snapmaker tarafından geliştirilmemiş, desteklenmemiş veya onaylanmamıştır. Tamamen ücretsiz ve kâr amacı gütmeyen bir çalışmadır. Firmware yüklemek her zaman risk taşır. İndirdiğiniz dosyanın cihaz, kanal, sürüm ve SHA-256 değerini doğrulamadan yükleme yapmayın.
 
+## Hızlı kurulum
+
+> [!NOTE]
+> Türkçe firmware henüz kurulmadığı için aşağıdaki menü adları yazıcıda göreceğiniz İngilizce biçimiyle verilmiştir.
+
+1. Yazıcınızın kanalına ve taban sürümüne uygun `.bin` dosyasını [Releases](../../releases) sayfasından indirin.
+2. Dosyayı **FAT32** biçimli USB belleğin kök dizinine kopyalayın ve belleği yazıcıya takın.
+3. Dokunmatik ekranda **Settings → About** bölümünü açın.
+4. **Version** satırına dokunun.
+5. Sağ üstteki **Local Update** seçeneğine girin.
+6. USB bellekteki `.bin` dosyasını seçip güncellemeyi onaylayın.
+7. Güncelleme tamamlanıp yazıcı yeniden başlayana kadar gücü kesmeyin ve USB belleği çıkarmayın.
+8. Yeniden başlatmanın ardından **Settings** içindeki dil ayarını açıp **Türkçe** seçeneğini etkinleştirin.
+
 ## Ekran görüntüleri
 
 <table>
@@ -47,8 +61,8 @@ Stock ve Extended paketleri birbiriyle değiştirilebilir dil paketleri değildi
 2. Dosyanın **tam 64 karakterlik SHA-256** değerini release notundaki değerle karşılaştırın. Ayrıntılar: [Doğrulama rehberi](docs/VERIFY.md).
 3. Kararlı güç sağlayın, devam eden baskıyı bitirin ve cihaz ayarlarınızı yedekleyin.
 4. Paketi FAT32 biçimli bir USB belleğin kök dizinine kopyalayın. Cihazınız FAT32 belleği algılamıyorsa desteklediği durumda exFAT deneyin.
-5. Dokunmatik ekrandaki yerel/USB firmware güncelleme akışından dosyayı seçin. Güncelleme sırasında gücü kesmeyin ve USB belleği çıkarmayın.
-6. Yeniden başlatmanın ardından dil ayarlarından `Türkçe` seçeneğini etkinleştirin.
+5. Dokunmatik ekranda **Settings → About → Version → Local Update** yolunu açıp doğruladığınız dosyayı seçin. Güncelleme sırasında gücü kesmeyin ve USB belleği çıkarmayın.
+6. Yeniden başlatmanın ardından **Settings** içindeki dil ayarını açıp `Türkçe` seçeneğini etkinleştirin.
 
 Adım adım talimat ve kanal uyarıları için [Kurulum rehberini](docs/INSTALL.md) okuyun.
 
