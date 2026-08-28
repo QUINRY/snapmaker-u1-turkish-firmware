@@ -47,23 +47,7 @@ Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır
 
 ## Ekran görüntüleri
 
-<table>
-  <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_1.jpg" alt="Türkçe ana ekran"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_2.jpg" alt="Türkçe ayarlar ekranı"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_3.jpg" alt="Türkçe yazdırma tercihleri ekranı"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_4.jpg" alt="Türkçe cihaz kalibrasyonu ekranı"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_5.jpg" alt="Türkçe baskı kafası bilgisi ekranı"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_6.jpg" alt="Türkçe kontrol paneli"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_7.jpg" alt="Türkçe baskı kafaları ekranı"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_8.jpg" alt="Türkçe fan hızı ekranı"></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_9.jpg" alt="Türkçe filament ekranı"></td>
-  </tr>
-</table>
+<p align="center"><img src="docs/images/extended-1.5.2/turkish-ui-preview.gif" alt="Snapmaker U1 Türkçe arayüz ekranlarının animasyonlu ön izlemesi"></p>
 
 Görüntüler Extended 1.5.2 Türkçe sürümündendir; diğer taban sürümlerde menü içeriği farklı olabilir.
 
