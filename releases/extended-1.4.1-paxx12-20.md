@@ -2,6 +2,8 @@
 
 Bu paket, Snapmaker U1 için **Extended 1.4.1-paxx12-20** firmware'i temel alınarak hazırlanmış Türkçe yerelleştirmedir. Ücretsiz, kâr amacı gütmeyen ve resmî olmayan bir topluluk çalışmasıdır; Snapmaker veya Extended Firmware geliştiricileri tarafından desteklenmiş ya da onaylanmış değildir.
 
+> **Kaynak / Credits:** Bu paketin Extended tabanı [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) projesi tarafından yayımlanmıştır. Özgün Extended Firmware geliştirmesi ve yayını için kaynak projenin bakımcılarına ve katkıda bulunanlarına teşekkür ederiz.
+
 ## Hızlı kurulum
 
 > Türkçe firmware henüz kurulmadığı için menü adları yazıcıda göründüğü İngilizce biçimiyle verilmiştir.

@@ -10,7 +10,7 @@ Bu proje Snapmaker ile bağlantılı değildir ve Snapmaker tarafından onaylanm
 
 ## Snapmaker U1 Extended Firmware
 
-Extended tabanlı sürümler, paxx12 topluluğunun [SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) çalışmasıyla birlikte kullanılmak üzere hazırlanmıştır. Extended Firmware'e ait özgün kod, değişiklik ve diğer içerikler kendi projesinde bildirilen lisanslara ve üçüncü taraf koşullarına tabidir.
+Bu depodaki Extended tabanlı Türkçe sürümler, [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) projesi temel alınarak hazırlanmıştır. Özgün Extended Firmware geliştirmesi ve yayını için kaynak projenin bakımcılarına ve katkıda bulunanlarına teşekkür ederiz. Extended Firmware'e ait özgün kod, değişiklik ve diğer içerikler kendi projesinde bildirilen lisanslara ve üçüncü taraf koşullarına tabidir.
 
 Extended tabanlı bir Türkçe paket, Snapmaker Stock firmware paketiyle değiştirilebilir değildir.
 

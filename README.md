@@ -58,8 +58,8 @@ Desteklenen kanallar birbirinden ayrıdır:
 | Kanal | Taban sürüm | Kaynak paket kimliği |
 | --- | --- | --- |
 | Snapmaker Stock | 1.6.0.267 | `U1_1.6.0.267_20260815150420_upgrade.bin` |
-| Extended | 1.5.2-paxx12-21 | İlgili Extended 1.5.2-paxx12-21 paketi |
-| Extended | 1.4.1-paxx12-20 | `U1_extended_1.4.1-paxx12-20_upgrade.bin` |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | İlgili Extended 1.5.2-paxx12-21 paketi |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
 Stock ve Extended paketleri birbiriyle değiştirilebilir dil paketleri değildir. Kullandığınız kanal ve taban sürüm için hazırlanmış release dosyasını seçin. Fiziksel yazıcıda flash/açılış testi yapılıp yapılmadığını ilgili release notundan kontrol edin.
 
@@ -83,6 +83,10 @@ Adım adım talimat ve kanal uyarıları için [Kurulum rehberini](docs/INSTALL.
 
 Orijinal firmware, ayıklanmış rootfs veya çalışma klasörleri Git geçmişinde tutulmaz. Dağıtıma uygun görülen büyük dosyalar yalnızca release eki olarak sunulur.
 
+## Teşekkür / Credits
+
+Extended 1.4.1 ve 1.5.2 tabanlarını yayımlayan [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) projesine ve katkıda bulunanlara teşekkürler. Bu depo, Extended Firmware üzerindeki özgün geliştirme için sahiplik iddiasında bulunmaz; burada sunulan çalışma Türkçe yerelleştirme, paketleme ve doğrulama katmanıdır.
+
 ## Sorumluluk ve üçüncü taraf hakları
 
 Bu deponun katkı sahiplerinin hak sahibi olduğu özgün çeviri, araç ve belgeleri `GPL-3.0-only` kapsamında lisanslanır. Bu lisans; Snapmaker firmware'ine, Extended Firmware bileşenlerine, ticari markalara veya diğer üçüncü taraf içeriklerine yeni bir lisans vermez. Bu bileşenler kendi telif ve lisans koşullarına tabidir.
@@ -100,5 +104,7 @@ Bir sorun bildirirken cihaz modelini, kurulu kanal ve sürümü, kullandığın�
 This is a free, non-profit and unofficial community localization for the Snapmaker U1 touchscreen. It adds Turkish as a separate `tr-TR` locale without replacing the existing languages.
 
 Download a build only from [GitHub Releases](../../releases), select the exact Stock or Extended base version, and compare the complete SHA-256 value before flashing. Stock and Extended channels are not interchangeable. Check each release note for its physical-device test status and read the [installation](docs/INSTALL.md) and [verification](docs/VERIFY.md) guides.
+
+Extended-based releases use firmware published by the [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) project. Credit for the original Extended Firmware work belongs to its maintainers and contributors.
 
 `GPL-3.0-only` applies only to original material for which this project's contributors hold the rights. Snapmaker firmware, Extended Firmware components, trademarks and all other third-party material remain subject to their respective terms. This project is not affiliated with, endorsed by, or supported by Snapmaker.
