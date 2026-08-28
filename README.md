@@ -10,14 +10,35 @@ Snapmaker U1 dokunmatik ekranına Türkçe dil desteği ekleyen bağımsız bir 
 > [!NOTE]
 > Türkçe firmware henüz kurulmadığı için aşağıdaki menü adları yazıcıda göreceğiniz İngilizce biçimiyle verilmiştir.
 
-1. Yazıcınızın kanalına ve taban sürümüne uygun `.bin` dosyasını [Releases](../../releases) sayfasından indirin.
-2. Dosyayı **FAT32** biçimli USB belleğin kök dizinine kopyalayın ve belleği yazıcıya takın.
+1. Yazıcınızın kanalına ve taban sürümüne uygun `.bin` dosyasını [Releases](../../releases) sayfasından indirin ve release notundaki tam SHA-256 değeriyle doğrulayın.
+2. Dosyayı **FAT32** biçimli USB belleğin kök dizinine kopyalayın. Karışıklığı önlemek için bellekte yalnızca yükleyeceğiniz tek firmware `.bin` dosyasını bırakın ve belleği yazıcıya takın.
 3. Dokunmatik ekranda **Settings → About** bölümünü açın.
-4. **Version** satırına dokunun.
+4. **Firmware Version** satırına dokunun.
 5. Sağ üstteki **Local Update** seçeneğine girin.
 6. USB bellekteki `.bin` dosyasını seçip güncellemeyi onaylayın.
 7. Güncelleme tamamlanıp yazıcı yeniden başlayana kadar gücü kesmeyin ve USB belleği çıkarmayın.
 8. Yeniden başlatmanın ardından **Settings** içindeki dil ayarını açıp **Türkçe** seçeneğini etkinleştirin.
+
+### Resimli anlatım
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="docs/images/installation/01-settings.jpg" alt="Ana ekranda Settings simgesi"><br><strong>Görsel 1 — Ana ekranda Settings simgesine dokunun.</strong></td>
+    <td width="50%" align="center"><img src="docs/images/installation/02-about.jpg" alt="Settings ekranında About satırı"><br><strong>Görsel 2 — Settings ekranında About satırını seçin.</strong></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><img src="docs/images/installation/03-firmware-version-redacted.png" alt="About ekranında Firmware Version satırı"><br><strong>Görsel 3 — Firmware Version satırına dokunun.</strong></td>
+    <td width="50%" align="center"><img src="docs/images/installation/04-local-update.jpg" alt="Firmware Version ekranında Local Update düğmesi"><br><strong>Görsel 4 — Sağ üstteki Local Update düğmesini seçin.</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="docs/images/installation/05-select-package.jpg" alt="USB bellekteki firmware paketini seçme"><br><strong>Görsel 5 — Cihazınıza uygun, SHA-256 değerini doğruladığınız .bin dosyasını seçin.</strong></td>
+  </tr>
+</table>
+
+> [!WARNING]
+> Son görselde birden fazla paket örnek olarak görünmektedir. Gerçek kurulumda Stock ve Extended paketlerini karıştırmayın; USB bellekte yalnızca cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladığınız tek `.bin` dosyasını bırakın.
+
+Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır.
 
 ## Ekran görüntüleri
 
@@ -61,7 +82,7 @@ Stock ve Extended paketleri birbiriyle değiştirilebilir dil paketleri değildi
 2. Dosyanın **tam 64 karakterlik SHA-256** değerini release notundaki değerle karşılaştırın. Ayrıntılar: [Doğrulama rehberi](docs/VERIFY.md).
 3. Kararlı güç sağlayın, devam eden baskıyı bitirin ve cihaz ayarlarınızı yedekleyin.
 4. Paketi FAT32 biçimli bir USB belleğin kök dizinine kopyalayın. Cihazınız FAT32 belleği algılamıyorsa desteklediği durumda exFAT deneyin.
-5. Dokunmatik ekranda **Settings → About → Version → Local Update** yolunu açıp doğruladığınız dosyayı seçin. Güncelleme sırasında gücü kesmeyin ve USB belleği çıkarmayın.
+5. Dokunmatik ekranda **Settings → About → Firmware Version → Local Update** yolunu açıp doğruladığınız dosyayı seçin. Güncelleme sırasında gücü kesmeyin ve USB belleği çıkarmayın.
 6. Yeniden başlatmanın ardından **Settings** içindeki dil ayarını açıp `Türkçe` seçeneğini etkinleştirin.
 
 Adım adım talimat ve kanal uyarıları için [Kurulum rehberini](docs/INSTALL.md) okuyun.

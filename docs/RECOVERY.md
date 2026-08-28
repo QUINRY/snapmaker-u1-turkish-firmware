@@ -7,7 +7,7 @@ Modified firmware always carries risk. Prepare the official firmware for the exa
 1. Download the correct official Snapmaker U1 firmware from Snapmaker's official support source.
 2. Verify that the download is intended for the U1 and is not an Extended build.
 3. Copy only the official update file to a FAT32 or exFAT USB drive.
-4. Open **Settings → About**, tap **Version**, choose **Local Update** in the top-right corner, select the verified official file, and do not interrupt power during the update.
+4. Open **Settings → About**, tap **Firmware Version**, choose **Local Update** in the top-right corner, select the verified official file, and do not interrupt power during the update.
 5. After boot, confirm the reported version and review printer settings before starting a print.
 
 ## If the touchscreen update path is unavailable

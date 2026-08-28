@@ -6,15 +6,15 @@ Bu paket, Snapmaker U1'in **resmî Stock 1.6.0.267** firmware'i temel alınarak 
 
 > Türkçe firmware henüz kurulmadığı için menü adları yazıcıda göründüğü İngilizce biçimiyle verilmiştir.
 
-1. Bu release'teki `.bin` dosyasını indirin.
-2. Dosyayı **FAT32** biçimli USB belleğin kök dizinine kopyalayın ve belleği yazıcıya takın.
-3. Dokunmatik ekranda **Settings → About** bölümünü açıp **Version** satırına dokunun.
+1. Bu release'teki `.bin` dosyasını indirin ve aşağıdaki tam SHA-256 değeriyle doğrulayın.
+2. Dosyayı **FAT32** biçimli USB belleğin kök dizinine kopyalayın. Bellekte yalnızca yükleyeceğiniz tek firmware `.bin` dosyasını bırakın ve belleği yazıcıya takın.
+3. Dokunmatik ekranda **Settings → About** bölümünü açıp **Firmware Version** satırına dokunun.
 4. Sağ üstteki **Local Update** seçeneğine girin.
 5. USB bellekteki `.bin` dosyasını seçip güncellemeyi onaylayın.
 6. Güncelleme tamamlanıp yazıcı yeniden başlayana kadar gücü kesmeyin ve USB belleği çıkarmayın.
 7. Yeniden başlatmanın ardından **Settings** içindeki dil ayarını açıp **Türkçe** seçeneğini etkinleştirin.
 
-SHA-256 kontrolü ve güvenli kurulum ayrıntıları için [Kurulum Rehberi](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/blob/main/docs/INSTALL.md) belgesini okuyun.
+Resimli adımlar için [ana sayfadaki Hızlı kurulum](https://github.com/QUINRY/snapmaker-u1-turkish-firmware#h%C4%B1zl%C4%B1-kurulum) bölümüne bakın. SHA-256 kontrolü ve güvenli kurulum ayrıntıları için [Kurulum Rehberi](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/blob/main/docs/INSTALL.md) belgesini okuyun.
 
 ## Doğru paket ve taban
 
