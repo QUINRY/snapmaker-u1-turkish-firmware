@@ -21,6 +21,9 @@ Snapmaker U1 dokunmatik ekranına Türkçe dil desteği ekleyen bağımsız bir 
 
 ### Resimli anlatım
 
+<details>
+<summary><strong>5 adımlı resimli kurulum anlatımını göster</strong></summary>
+
 <table>
   <tr>
     <td width="50%" align="center"><img src="docs/images/installation/01-settings.jpg" alt="Ana ekranda Settings simgesi"><br><strong>Görsel 1 — Ana ekranda Settings simgesine dokunun.</strong></td>
@@ -39,6 +42,8 @@ Snapmaker U1 dokunmatik ekranına Türkçe dil desteği ekleyen bağımsız bir 
 > Son görselde birden fazla paket örnek olarak görünmektedir. Gerçek kurulumda Stock ve Extended paketlerini karıştırmayın; USB bellekte yalnızca cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladığınız tek `.bin` dosyasını bırakın.
 
 Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır.
+
+</details>
 
 ## Ekran görüntüleri
 

@@ -17,6 +17,9 @@ Bu rehber yalnızca Snapmaker U1 için hazırlanmıştır. Başlamadan önce [so
 
 ### Resimli anlatım
 
+<details>
+<summary><strong>5 adımlı resimli kurulum anlatımını göster</strong></summary>
+
 #### Görsel 1 — `Settings`
 
 Ana ekranda sol taraftaki **Settings** simgesine dokunun.
@@ -51,6 +54,8 @@ Cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladı�
 
 > [!WARNING]
 > Örnek görselde birden fazla Stock ve Extended paketi birlikte görünmektedir. Gerçek kurulumda USB bellekte yalnızca yükleyeceğiniz tek doğrulanmış `.bin` dosyasını bırakın. Stock ve Extended kanallarını veya farklı taban sürümlerini karıştırmayın.
+
+</details>
 
 ## Ayrıntılı ve güvenli kurulum
 
