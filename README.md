@@ -49,8 +49,6 @@ Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır
 
 <p align="center"><img src="docs/images/extended-1.5.2/turkish-ui-preview.gif" alt="Snapmaker U1 Türkçe arayüz ekranlarının animasyonlu ön izlemesi"></p>
 
-Görüntüler Extended 1.5.2 Türkçe sürümündendir; diğer taban sürümlerde menü içeriği farklı olabilir.
-
 ## İndirme
 
 Hazır paketler ve her paketin tam SHA-256 değeri [GitHub Releases](../../releases) sayfasında yayımlanır.
