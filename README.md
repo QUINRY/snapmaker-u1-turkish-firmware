@@ -49,19 +49,19 @@ Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır
 
 <table>
   <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_1.jpg" alt="Türkçe ana ekran"><br><strong>Ana ekran</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_2.jpg" alt="Türkçe ayarlar ekranı"><br><strong>Ayarlar</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_3.jpg" alt="Türkçe yazdırma tercihleri ekranı"><br><strong>Yazdırma tercihleri</strong></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_1.jpg" alt="Türkçe ana ekran"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_2.jpg" alt="Türkçe ayarlar ekranı"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_3.jpg" alt="Türkçe yazdırma tercihleri ekranı"></td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_4.jpg" alt="Türkçe cihaz kalibrasyonu ekranı"><br><strong>Cihaz kalibrasyonu</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_5.jpg" alt="Türkçe baskı kafası bilgisi ekranı"><br><strong>Baskı kafası bilgisi</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_6.jpg" alt="Türkçe kontrol paneli"><br><strong>Kontrol paneli</strong></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_4.jpg" alt="Türkçe cihaz kalibrasyonu ekranı"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_5.jpg" alt="Türkçe baskı kafası bilgisi ekranı"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_6.jpg" alt="Türkçe kontrol paneli"></td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_7.jpg" alt="Türkçe baskı kafaları ekranı"><br><strong>Baskı kafaları</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_8.jpg" alt="Türkçe fan hızı ekranı"><br><strong>Fan hızı</strong></td>
-    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_9.jpg" alt="Türkçe filament ekranı"><br><strong>Filament</strong></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_7.jpg" alt="Türkçe baskı kafaları ekranı"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_8.jpg" alt="Türkçe fan hızı ekranı"></td>
+    <td align="center"><img src="docs/images/extended-1.5.2/1.5.2cw_9.jpg" alt="Türkçe filament ekranı"></td>
   </tr>
 </table>
 
