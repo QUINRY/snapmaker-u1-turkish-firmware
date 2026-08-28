@@ -48,12 +48,12 @@ Gizlilik amacıyla bu görseldeki cihaz seri numarası kapatılmıştır.
 
 #### Görsel 5 — Firmware paketini seçin
 
-Cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladığınız `.bin` dosyasını seçip güncellemeyi onaylayın.
+Kurmak istediğiniz hedef release'e ait, SHA-256 değerini doğruladığınız `.bin` dosyasını seçip güncellemeyi onaylayın.
 
 <p align="center"><img src="images/installation/05-select-package.jpg" alt="USB bellekteki firmware paketleri arasından doğru dosyayı seçme ekranı" width="480"></p>
 
 > [!WARNING]
-> Örnek görselde birden fazla Stock ve Extended paketi birlikte görünmektedir. Gerçek kurulumda USB bellekte yalnızca yükleyeceğiniz tek doğrulanmış `.bin` dosyasını bırakın. Stock ve Extended kanallarını veya farklı taban sürümlerini karıştırmayın.
+> Örnek görselde birden fazla Stock ve Extended paketi birlikte görünmektedir. Bu uyarı kanal geçişini yasaklamak için değil, yanlış dosya seçimini önlemek içindir. Gerçek kurulumda USB bellekte yalnızca hedef release'e ait, SHA-256 değeri doğrulanmış tek `.bin` dosyasını bırakın.
 
 </details>
 
@@ -62,12 +62,12 @@ Cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladı�
 ### 1. Doğru paketi seçin
 
 1. Yazıcının mevcut firmware sürümünü **Settings → About → Firmware Version** ekranından not edin.
-2. Cihazınızın **Snapmaker Stock** mı yoksa **Extended** kanalında mı olduğunu kesinleştirin.
-3. [Releases](../../../releases) sayfasından yalnızca aynı kanal ve belirtilen taban sürüm için hazırlanmış Türkçe paketi indirin.
-4. Release notunda fiziksel cihaz testi durumunu kontrol edin. Fiziksel test yapılmadıysa bunu değerlendirerek devam edin.
+2. Cihazınızın mevcut **Snapmaker Stock** veya **Extended** kanalını not edin.
+3. [Releases](../../../releases) sayfasından kurmak istediğiniz hedef kanal ve sürüme ait Türkçe paketi indirin.
+4. Release notunda fiziksel cihaz testinin tam kapsamını okuyun; flash/boot başarısı tam baskı veya kapsamlı regresyon testi anlamına gelmez.
 
-> [!WARNING]
-> Stock → Extended veya Extended → Stock geçişi basit bir dil güncellemesi değildir. Release notu açıkça desteklediğini söylemedikçe bu rehberi kanal değiştirmek için kullanmayın. Farklı sürümlerin benzer dosya adlarına sahip olması uyumlu oldukları anlamına gelmez.
+> [!NOTE]
+> Bu paketler tam firmware güncellemeleridir ve seçilen dosya kurulum sonrasındaki hedef kanalı belirler. Aynı fiziksel U1 üzerinde **resmî İngilizce Stock 1.6.0.267 → Türkçe Extended 1.4.1 → Türkçe Extended 1.5.2 → Türkçe Stock 1.6.0.267** sırası başarıyla yüklenip açılmıştır. Bu tek cihazlık flash/boot/Türkçe arayüz smoke testi başka başlangıç sürümlerini, sıraları, tam baskı döngüsünü veya kapsamlı regresyonu doğrulamaz.
 
 ### 2. Dosyayı doğrulayın
 

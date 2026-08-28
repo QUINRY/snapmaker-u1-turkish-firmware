@@ -30,7 +30,7 @@ Resimli adımlar için [ana sayfadaki Hızlı kurulum](https://github.com/QUINRY
 - Asset boyutu: `259859532` bayt
 - Asset SHA-256: `6EFE052669494B91801139C426C17E85DEE212EAF32E3F891F01AAAE7C033086`
 
-Bu asset yalnız **Extended 1.5.2-paxx12-21** tabanı içindir; Stock 1.6.0 veya Extended 1.4.1 paketi değildir. Yayımlanan dosya Türkçe karakterli UTF-8 adaydır. SHA-256 değeri `946C237B...` ile başlayan eski ASCII aday bu yayına dahil edilmemiştir. İndirme tamamlandıktan sonra dosya özetini `SHA256SUMS.txt` veya `manifests/extended-1.5.2-paxx12-21.json` ile doğrulayın.
+Bu asset kurulum sonrasında cihazı **Extended 1.5.2-paxx12-21** tabanına geçirir; Stock 1.6.0 veya Extended 1.4.1 release asseti değildir. Türkçe Extended 1.4.1 üzerinden bu dosyaya geçiş aynı fiziksel U1 üzerinde başarıyla denenmiştir. Yayımlanan dosya Türkçe karakterli UTF-8 adaydır; SHA-256 değeri `946C237B...` ile başlayan eski ASCII aday bu yayına dahil edilmemiştir. Dosyayı tam adı, boyutu ve SHA-256 değeriyle ayırın; indirme tamamlandıktan sonra `SHA256SUMS.txt` veya `manifests/extended-1.5.2-paxx12-21.json` ile doğrulayın.
 
 ## Türkçe yerelleştirme
 
@@ -52,7 +52,7 @@ Bu asset yalnız **Extended 1.5.2-paxx12-21** tabanı içindir; Stock 1.6.0 veya
 
 ## Risk ve test durumu
 
-Bu yayın için rapora kaydedilmiş fiziksel Snapmaker U1 flash, açılış veya gerçek ekran yerleşim testi **yoktur**. Paket statik, emüle edilmiş ve katman katman bütünlük kontrollerinden geçmiştir; bu kontroller fiziksel cihaz testinin yerini tutmaz. Firmware yükleme işlemi başarısız olursa cihaz kurtarma işlemi gerekebilir. Yükleme kararı ve sonuçları kullanıcı sorumluluğundadır; işlem sırasında güç kesilmemesini sağlayın.
+Bu release asseti aynı fiziksel Snapmaker U1 üzerinde **Türkçe Extended 1.4.1 üzerinden** kullanıcı tarafından yüklendi; güncelleme tamamlandı, cihaz açıldı ve Türkçe arayüz görüntülenip kullanıldı. Bu, **resmî İngilizce Stock 1.6.0.267 → Türkçe Extended 1.4.1 → Türkçe Extended 1.5.2 → Türkçe Stock 1.6.0.267** zincirinin üçüncü adımıydı ve kullanıcı sorun bildirmedi. Bu kanıt tek cihazlık, kullanıcı tarafından bildirilen bir flash/boot/Türkçe arayüz smoke testidir; tam baskı döngüsünü, tüm ekranları ve donanım işlevlerini, uzun süreli kararlılığı veya kapsamlı regresyonu doğrulamaz. Firmware yükleme riski devam eder; işlem sırasında gücü kesmeyin.
 
 ## Lisans ve marka notu
 

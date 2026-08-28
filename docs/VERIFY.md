@@ -54,7 +54,7 @@ sha256sum "DOSYA_ADI.bin"
 
 Firmware'i **yüklemeyin**.
 
-1. Dosyanın doğru release ve doğru Stock/Extended kanalından geldiğini kontrol edin.
+1. Dosyanın seçtiğiniz hedef release ve hedef Stock/Extended kanalından geldiğini kontrol edin.
 2. Eksik/yarım indirmeyi silip release sayfasından yeniden indirin.
 3. SHA-256 değerini tekrar hesaplayın.
 4. Release notunda yayımlanan dosya boyutuyla yerel dosya boyutunu da karşılaştırın.
@@ -63,11 +63,11 @@ Firmware'i **yüklemeyin**.
 ## Kurulumdan önce son kontrol
 
 - Cihaz modeli: Snapmaker U1
-- Kanal: Stock veya doğru Extended sürümü
-- Taban sürüm: release notuyla birebir uyumlu
+- Hedef kanal: kurmak istediğiniz Stock veya Extended release
+- Hedef sürüm: release notuyla birebir uyumlu
 - Dosya adı: doğru release eki
 - Dosya boyutu: release notuyla uyumlu
 - SHA-256: tam 64 karakter birebir eşleşiyor
-- Fiziksel test durumu: release notundan okundu
+- Fiziksel test kapsamı: release notundan okundu; flash/boot/Türkçe arayüz smoke testi ile tam regresyonun farklı olduğu anlaşıldı
 
 Bu maddelerden biri belirsizse kurulumu erteleyin.

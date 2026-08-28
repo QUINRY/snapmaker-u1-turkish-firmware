@@ -48,9 +48,22 @@
     "gui_checks_passed": 80,
     "gui_checks_total": 80,
     "font_glyphs_checked": true,
-    "physical_flash_test_documented": false,
-    "physical_boot_test_documented": false,
-    "physical_screen_test_documented": false
+    "physical_flash_test_documented": true,
+    "physical_boot_test_documented": true,
+    "physical_screen_test_documented": true,
+    "physical_test_evidence": "user_reported",
+    "physical_test_device_count": 1,
+    "physical_test_scope": "flash_boot_turkish_ui_smoke",
+    "physical_test_transition": "turkish-extended-1.5.2-paxx12-21 -> turkish-stock-1.6.0.267",
+    "physical_test_sequence": [
+      "official-english-stock-1.6.0.267",
+      "turkish-extended-1.4.1-paxx12-20",
+      "turkish-extended-1.5.2-paxx12-21",
+      "turkish-stock-1.6.0.267"
+    ],
+    "full_print_cycle_test_documented": false,
+    "full_ui_regression_test_documented": false,
+    "long_term_stability_test_documented": false
   },
   "project": {
     "noncommercial_maintainer_intent": true,
@@ -58,5 +71,5 @@
     "original_work_license": "GPL-3.0-only",
     "third_party_components_retain_their_own_licenses": true
   },
-  "warning": "Firmware yükleme işlemi cihaz kurtarma gerektirebilir. Statik ve emüle edilmiş doğrulamalar fiziksel cihaz testinin yerini tutmaz; kullanım riski kullanıcıya aittir."
+  "warning": "Bu dosya cihazı Stock 1.6.0.267 hedefine geçirir. Türkçe Extended 1.5.2 üzerinden tek cihazda flash/boot/Türkçe arayüz smoke testi yapılmıştır; diğer sürümler, kurulum sıraları, tam baskı döngüsü ve kapsamlı regresyon bu testin dışındadır. Firmware yükleme riski kullanıcıya aittir."
 }

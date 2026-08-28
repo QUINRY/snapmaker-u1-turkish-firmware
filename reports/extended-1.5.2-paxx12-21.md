@@ -72,4 +72,4 @@ SquashFS yazıcısı `ALWAYS_FRAGMENTS` ve `NO_XATTRS` bilgilendirme bitlerini a
 
 ## Sınır
 
-Firmware statik, emüle edilmiş ve katman katman yeniden-açma kontrollerinden geçti. Fiziksel Snapmaker U1 üzerinde flash/boot ve gerçek ekran yerleşim testi yapılmadı. Custom firmware flash işlemi her zaman cihaz kurtarma gerektirebilecek bir risk taşır.
+Firmware statik, emüle edilmiş ve katman katman yeniden-açma kontrollerinden geçti. Bu rapor hazırlanırken fiziksel test henüz yapılmamıştı. Daha sonra yayımlanan asset aynı Snapmaker U1 üzerinde Türkçe Extended 1.4.1 üzerinden yüklendi; güncelleme tamamlandı, cihaz açıldı ve Türkçe arayüz görüntülenip kullanıldı. Bu kullanıcı tarafından bildirilen tek cihazlık smoke testi tam baskı döngüsünü, tüm ekran/donanım işlevlerini, uzun süreli kararlılığı veya kapsamlı regresyonu doğrulamaz. Custom firmware flash riski devam eder.

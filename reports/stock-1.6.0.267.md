@@ -46,4 +46,4 @@ Kaynak firmware değiştirilmedi:
 - Final GUI bağımsız doğrulamada `80/80 PASS` aldı. AArch64 sembolik yürütmede Türkçe kayıt/seçim, enum, metin arama, kalıcı kayıt ve hata kataloğu yönlendirme yolları geçti.
 - SquashFS içerik/tarih karşılaştırması yalnız yeni Türkçe hata dosyasını ve değiştirilmiş GUI'yi raporladı. Araç ayrıca iki değişmemiş dosyayı seyrek blok algılaması nedeniyle `extended inode` olarak gösterdi; iki dosyanın kaynak ve final SHA-256 değerleri birebir aynıdır.
 - Türkçe font glif kapsamı ve uzun açıklamaların piksel genişlikleri denetlendi.
-- Fiziksel yazıcıya flash testi yapılmadı.
+- Bu rapor hazırlanırken fiziksel flash testi henüz yapılmamıştı. Daha sonra yayımlanan asset aynı Snapmaker U1 üzerinde Türkçe Extended 1.5.2 üzerinden yüklendi; güncelleme tamamlandı, cihaz açıldı ve Türkçe arayüz görüntülenip kullanıldı. Bu kullanıcı tarafından bildirilen tek cihazlık smoke testi tam baskı döngüsünü, tüm ekran/donanım işlevlerini, uzun süreli kararlılığı veya kapsamlı regresyonu doğrulamaz.

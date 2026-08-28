@@ -39,7 +39,7 @@ Snapmaker U1 dokunmatik ekranına Türkçe dil desteği ekleyen bağımsız bir 
 </table>
 
 > [!WARNING]
-> Son görselde birden fazla paket örnek olarak görünmektedir. Gerçek kurulumda Stock ve Extended paketlerini karıştırmayın; USB bellekte yalnızca cihaz kanalınıza ve taban sürümünüze uygun, SHA-256 değerini doğruladığınız tek `.bin` dosyasını bırakın.
+> Son görselde birden fazla paket örnek olarak görünmektedir. Bu uyarı kanal geçişini yasaklamak için değil, yanlış dosya seçimini önlemek içindir. USB bellekte yalnızca kurmak istediğiniz hedef release'e ait, SHA-256 değerini doğruladığınız tek `.bin` dosyasını bırakın.
 
 Gizlilik amacıyla üçüncü görseldeki cihaz seri numarası kapatılmıştır.
 
@@ -61,11 +61,11 @@ Desteklenen kanallar birbirinden ayrıdır:
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | `TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
-Stock ve Extended paketleri birbiriyle değiştirilebilir dil paketleri değildir. Kullandığınız kanal ve taban sürüm için hazırlanmış release dosyasını seçin. Fiziksel yazıcıda flash/açılış testi yapılıp yapılmadığını ilgili release notundan kontrol edin.
+Bunlar tek başına dil paketi değil, kurulduklarında hedef kanal ve sürümü belirleyen tam firmware paketleridir. Aynı fiziksel Snapmaker U1 üzerinde **resmî İngilizce Stock 1.6.0.267 → Türkçe Extended 1.4.1 → Türkçe Extended 1.5.2 → Türkçe Stock 1.6.0.267** sırası başarıyla yüklenmiş ve cihaz her adımda açılmıştır. Bu sonuç yalnız belirtilen tek cihaz ve sıra için flash/boot/Türkçe arayüz smoke testidir; başka sürüm veya sıraların doğrulandığı anlamına gelmez. Kurmak istediğiniz hedef release'i dosya adı ve SHA-256 değeriyle seçin, test kapsamını ilgili release notundan okuyun.
 
 ## Güvenli kurulum özeti
 
-1. Doğru kanal ve taban sürüme ait `.bin` dosyasını [Releases](../../releases) sayfasından indirin.
+1. Kurmak istediğiniz hedef kanal ve sürüme ait `.bin` dosyasını [Releases](../../releases) sayfasından indirin.
 2. Dosyanın **tam 64 karakterlik SHA-256** değerini release notundaki değerle karşılaştırın. Ayrıntılar: [Doğrulama rehberi](docs/VERIFY.md).
 3. Kararlı güç sağlayın, devam eden baskıyı bitirin ve cihaz ayarlarınızı yedekleyin.
 4. Paketi FAT32 biçimli bir USB belleğin kök dizinine kopyalayın. Cihazınız FAT32 belleği algılamıyorsa desteklediği durumda exFAT deneyin.
@@ -103,7 +103,7 @@ Bir sorun bildirirken cihaz modelini, kurulu kanal ve sürümü, kullandığın�
 
 This is a free, non-profit and unofficial community localization for the Snapmaker U1 touchscreen. It adds Turkish as a separate `tr-TR` locale without replacing the existing languages.
 
-Download a build only from [GitHub Releases](../../releases), select the exact Stock or Extended base version, and compare the complete SHA-256 value before flashing. Stock and Extended channels are not interchangeable. Check each release note for its physical-device test status and read the [installation](docs/INSTALL.md) and [verification](docs/VERIFY.md) guides.
+Download a build only from [GitHub Releases](../../releases), select the intended target Stock or Extended release, and compare the complete SHA-256 value before flashing. These are complete firmware images rather than standalone language packs. On one physical U1, the exact sequence **official English Stock 1.6.0.267 → Turkish Extended 1.4.1 → Turkish Extended 1.5.2 → Turkish Stock 1.6.0.267** was installed successfully and the printer booted after every step. This is a user-reported, single-device flash/boot/Turkish-UI smoke test, not proof for other versions, orders, full print cycles, or comprehensive regression. Read the [installation](docs/INSTALL.md) and [verification](docs/VERIFY.md) guides.
 
 Extended-based releases use firmware published by the [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) project. Credit for the original Extended Firmware work belongs to its maintainers and contributors.
 

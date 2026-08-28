@@ -36,4 +36,4 @@ Kaynak firmware değiştirilmedi. Kaynak dosyanın yeniden doğrulanan SHA-256 d
 
 ## Önemli not
 
-Paket biçimi ve iç bütünlük kontrolleri tamamlandı; ancak fiziksel bir Snapmaker U1 üzerinde flash, açılış ve ekran testi yapılmadı. Firmware yükleme işlemi her özel firmware kullanımında olduğu gibi kullanıcı sorumluluğundadır.
+Paket biçimi ve iç bütünlük kontrolleri tamamlandı. Bu rapor hazırlanırken fiziksel test henüz yapılmamıştı. Daha sonra yayımlanan asset aynı Snapmaker U1 üzerinde resmî İngilizce Stock 1.6.0.267 üzerinden yüklendi; güncelleme tamamlandı, cihaz açıldı ve Türkçe arayüz görüntülenip kullanıldı. Bu kullanıcı tarafından bildirilen tek cihazlık smoke testi tam baskı döngüsünü, tüm ekran/donanım işlevlerini, uzun süreli kararlılığı veya kapsamlı regresyonu doğrulamaz. Firmware yükleme riski devam eder.

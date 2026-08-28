@@ -19,9 +19,10 @@ Dosyalar ve belgeler, yürürlükteki hukukun izin verdiği ölçüde, açık ve
 ## Kullanmadan önce
 
 - Paket yalnızca Snapmaker U1 içindir; başka bir modele yüklemeyin.
-- Stock ile Extended kanallarını veya farklı taban sürümleri karıştırmayın.
+- Kurmak istediğiniz hedef Stock veya Extended release'i tam dosya adı ve SHA-256 değeriyle seçin; USB bellekte aynı anda yalnızca hedef `.bin` dosyasını bırakın.
 - Release notunda belirtilen tam dosya adı, sürüm, dosya boyutu ve SHA-256 değerini kontrol edin.
-- Release notundan fiziksel flash/açılış testinin durumunu okuyun. “Yapısal olarak doğrulandı” ifadesi fiziksel cihaz testi anlamına gelmez.
+- Yayımlanan paketlerin **resmî İngilizce Stock 1.6.0.267 → Türkçe Extended 1.4.1 → Türkçe Extended 1.5.2 → Türkçe Stock 1.6.0.267** sırası tek bir fiziksel U1 üzerinde başarıyla flashlanıp açılmıştır. Başka sürüm ve sıralar bu testle doğrulanmış sayılmaz.
+- Release notundan fiziksel testin tam kapsamını okuyun. Flash/açılış başarısı tam baskı döngüsü, tüm donanım işlevleri veya kapsamlı regresyon testi anlamına gelmez.
 - Kararlı güç kullanın, devam eden baskıyı bitirin ve mümkün olan ayar/veri yedeklerini alın.
 - Güncelleme sırasında cihazı kapatmayın ve USB belleği çıkarmayın.
 
