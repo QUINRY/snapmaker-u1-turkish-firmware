@@ -57,7 +57,7 @@ Desteklenen kanallar birbirinden ayrıdır:
 
 | Kanal | Taban sürüm | Kaynak paket kimliği |
 | --- | --- | --- |
-| Snapmaker Stock | 1.6.0.267 | `TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin` |
+| [Snapmaker Stock](https://wiki.snapmaker.com/en/snapmaker_u1/firmware/release_notes/v160) | 1.6.0.267 | `TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | `TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
