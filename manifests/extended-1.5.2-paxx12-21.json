@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "release_id": "extended-1.5.2-paxx12-21",
+  "product": "Snapmaker U1",
+  "channel": "extended",
+  "extended_base": "paxx12-21",
+  "upfile": {
+    "version": "1.5.2.132a88932",
+    "build_date": "20260722102206"
+  },
+  "source_firmware": {
+    "filename": "U1_extended_1.5.2-paxx12-21_upgrade.bin",
+    "size_bytes": 259773516,
+    "sha256": "F85BBD0FC15FC4029ABB7EE15B5D61805AA16E47C9D4B5AA1289204D42835C0E"
+  },
+  "release_asset": {
+    "filename": "TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin",
+    "size_bytes": 259859532,
+    "sha256": "6EFE052669494B91801139C426C17E85DEE212EAF32E3F891F01AAAE7C033086",
+    "utf8_candidate": true,
+    "legacy_ascii_candidate": false
+  },
+  "localization": {
+    "locale": "tr-TR",
+    "display_name": "Türkçe",
+    "position": 7,
+    "existing_locales_preserved": 6,
+    "encoding": "UTF-8",
+    "normalization": "NFC",
+    "bom": false,
+    "main_entries": 530,
+    "error_entries": 446,
+    "main_sha256": "6FB01108BC1678AF325C48098043FE6D7C9E43DF922089389FC8C105A4B4F8C1",
+    "errors_sha256": "A133F74173A007E89B4A67F63111FC13908657CC3733C50551E798BAE4430E5D",
+    "patched_gui_sha256": "F09884406204B747471E140BA3834377346B971BD97643B5813A398EBEACD44C"
+  },
+  "package": {
+    "rootfs_size_bytes": 220336128,
+    "rootfs_partition_limit_bytes": 314572800,
+    "rootfs_sha256": "E732839784645972C68782D6F221E649D9D28756EF689A9BF9DDEA00128D96FE",
+    "rkaf_sha256": "3EA0765E8E6D3FC509FF7A027178E55048D3986AE09B5F4B08BDE96D0DAA6BDD",
+    "rkfw_sha256": "1E9780CDD7B372409488EBF784F0A804894B393CF32460C3109304A67024B48D"
+  },
+  "verification": {
+    "upfile_checksums_and_md5": true,
+    "rkfw_trailing_md5": true,
+    "rkaf_crc": true,
+    "fresh_unpack_all_layers": true,
+    "rootfs_only_gui_changed": true,
+    "non_rootfs_partitions_unchanged": true,
+    "final_gui_exact": true,
+    "gui_checks_passed": 59,
+    "gui_checks_total": 59,
+    "font_glyphs_checked": true,
+    "physical_flash_test_documented": false,
+    "physical_boot_test_documented": false,
+    "physical_screen_test_documented": false
+  },
+  "project": {
+    "noncommercial_maintainer_intent": true,
+    "unofficial": true,
+    "original_work_license": "GPL-3.0-only",
+    "third_party_components_retain_their_own_licenses": true
+  },
+  "warning": "Bu dosya yalnız Extended 1.5.2-paxx12-21 kanalı içindir. Firmware yükleme işlemi cihaz kurtarma gerektirebilir; kullanım riski kullanıcıya aittir."
+}

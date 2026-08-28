@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "release_id": "stock-1.6.0.267",
+  "product": "Snapmaker U1",
+  "channel": "stock",
+  "upfile": {
+    "version": "1.6.0.267",
+    "build_date": "20260815150420"
+  },
+  "source_firmware": {
+    "filename": "U1_1.6.0.267_20260815150420_upgrade.bin",
+    "size_bytes": 254649088,
+    "sha256": "9F446819E51A2E7A2F0516FDE0C025F2B1CD9C23396301E0F5C45E7859CD8AF4"
+  },
+  "release_asset": {
+    "filename": "TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin",
+    "size_bytes": 279016192,
+    "sha256": "A8483C8B9909FC527904461F8521FA7D4D91780FC718343C6C89E7999D5197E5"
+  },
+  "localization": {
+    "locale": "tr-TR",
+    "display_name": "Türkçe",
+    "position": 7,
+    "existing_locales_preserved": 6,
+    "encoding": "UTF-8",
+    "normalization": "NFC",
+    "bom": false,
+    "main_entries": 550,
+    "error_entries": 458,
+    "main_sha256": "B4AA86B72C88CEB35A7600C96E0F343904006A0A82E79EFA8C5B9888E1D187EC",
+    "errors_sha256": "81D1FFF203CB79B08917C16FBFF1715C063019461156473296F7A964B7A912FD",
+    "patched_gui_sha256": "DF70EE929F80FDBBBA2F0F5348DBC38A6F30533756E73F40CB235352AB16D48B"
+  },
+  "package": {
+    "rootfs_size_bytes": 239489024,
+    "rootfs_partition_limit_bytes": 314572800,
+    "rootfs_sha256": "84F998D3EA3BB814660252AB25A58196DC84E17CC16A18EDAF2E68AE802C221E",
+    "rkaf_sha256": "0C7BF48B0FB0800EE711FBEE75B398DFEC281F6CC06B036D53047792EA01D727",
+    "rkfw_sha256": "7C88EFA5BC725B9922EF2F84C7B3B39085E78775A728374FD2E231FBFD2B98B5"
+  },
+  "verification": {
+    "upfile_checksums_and_md5": true,
+    "rkfw_trailing_md5": true,
+    "rkaf_crc": true,
+    "fresh_unpack_all_layers": true,
+    "non_rootfs_partitions_unchanged": true,
+    "final_gui_exact": true,
+    "gui_checks_passed": 80,
+    "gui_checks_total": 80,
+    "font_glyphs_checked": true,
+    "physical_flash_test_documented": false,
+    "physical_boot_test_documented": false,
+    "physical_screen_test_documented": false
+  },
+  "project": {
+    "noncommercial_maintainer_intent": true,
+    "unofficial": true,
+    "original_work_license": "GPL-3.0-only",
+    "third_party_components_retain_their_own_licenses": true
+  },
+  "warning": "Firmware yükleme işlemi cihaz kurtarma gerektirebilir. Statik ve emüle edilmiş doğrulamalar fiziksel cihaz testinin yerini tutmaz; kullanım riski kullanıcıya aittir."
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "release_id": "extended-1.4.1-paxx12-20",
+  "product": "Snapmaker U1",
+  "channel": "extended",
+  "extended_base": "paxx12-20",
+  "upfile": {
+    "version": "1.4.1.6ff6e2cf",
+    "build_date": "20260608141446"
+  },
+  "source_firmware": {
+    "filename": "U1_extended_1.4.1-paxx12-20_upgrade.bin",
+    "size_bytes": 290327624,
+    "sha256": "8DDB1D6DC889F8C11D6AC708DD4858439B13E830D3BF93064E857433A70FF3C3"
+  },
+  "release_asset": {
+    "filename": "TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin",
+    "size_bytes": 290409544,
+    "sha256": "3DB9844CC01A9A2EA93E02EB990EBDDE7707637CF8FB60CF3A6EAEDAFE2127D0"
+  },
+  "localization": {
+    "locale": "tr-TR",
+    "display_name": "Türkçe",
+    "position": 5,
+    "existing_locales_preserved": 4,
+    "encoding": "UTF-8",
+    "normalization": "NFC",
+    "bom": false,
+    "main_entries": 528,
+    "error_entries": 444,
+    "link_entries": 415,
+    "main_sha256": "2B530B5FA84B76D7E698E957DA9876ED9443C8ACC8B82FDED36DE152554BDBE1",
+    "errors_sha256": "4D256EEC729765159E15E44AE10AA84C6EDF9F7F512FE59A1BD3C0C5F39C0412",
+    "links_sha256": "7B38847FB83804BCC316DDACC28A358B6119A77501203BCCFCDF7B7DC6A72828",
+    "links_byte_identical_to_english": true,
+    "patched_gui_sha256": "C5874FDA151B6D767EF3A5CB9CDE3FEC381ED9EE068B9CCA6C3081326671B1DC"
+  },
+  "package": {
+    "rootfs_size_bytes": 251027456,
+    "rootfs_partition_limit_bytes": 314572800,
+    "rootfs_sha256": "46E1EE252BFACF8774FF7E0CC4E5CFEFD46B8724321040E302996B8C352FF2D2",
+    "rkaf_sha256": "ED2F963D51D3159D420FF3496E1DA89B1D00ABFA07607EB5806687B060D659FC",
+    "rkfw_sha256": "E1CDCCD1A2093CCC2FA2C141D75BD03F21B346DA48163EB30E41C0589B84CE87"
+  },
+  "verification": {
+    "source_hashes_rechecked": true,
+    "upfile_checksums_and_md5": true,
+    "rkfw_trailing_md5": true,
+    "rkfw_header_independent": true,
+    "rkaf_crc": true,
+    "rkaf_layout_independent": true,
+    "fresh_unpack_all_layers": true,
+    "rootfs_only_gui_changed": true,
+    "non_rootfs_partitions_unchanged": true,
+    "final_gui_exact": true,
+    "prebuild_gui_independent": true,
+    "final_extracted_gui_independent": true,
+    "physical_flash_test_documented": false,
+    "physical_boot_test_documented": false,
+    "physical_screen_test_documented": false
+  },
+  "project": {
+    "noncommercial_maintainer_intent": true,
+    "unofficial": true,
+    "original_work_license": "GPL-3.0-only",
+    "third_party_components_retain_their_own_licenses": true
+  },
+  "warning": "Bu dosya yalnız Extended 1.4.1-paxx12-20 kanalı içindir. Firmware yükleme işlemi cihaz kurtarma gerektirebilir; kullanım riski kullanıcıya aittir."
+}
