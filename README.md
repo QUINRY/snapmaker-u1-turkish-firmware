@@ -57,9 +57,9 @@ Desteklenen kanallar birbirinden ayrıdır:
 
 | Kanal | Taban sürüm | Kaynak paket kimliği |
 | --- | --- | --- |
-| Snapmaker Stock | 1.6.0.267 | `U1_1.6.0.267_20260815150420_upgrade.bin` |
-| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | İlgili Extended 1.5.2-paxx12-21 paketi |
-| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `U1_extended_1.4.1-paxx12-20_upgrade.bin` |
+| Snapmaker Stock | 1.6.0.267 | `TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin` |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | `TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin` |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
 Stock ve Extended paketleri birbiriyle değiştirilebilir dil paketleri değildir. Kullandığınız kanal ve taban sürüm için hazırlanmış release dosyasını seçin. Fiziksel yazıcıda flash/açılış testi yapılıp yapılmadığını ilgili release notundan kontrol edin.
 
