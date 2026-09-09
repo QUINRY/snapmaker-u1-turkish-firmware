@@ -58,10 +58,13 @@ Desteklenen kanallar birbirinden ayrıdır:
 | Kanal | Taban sürüm | Kaynak paket kimliği |
 | --- | --- | --- |
 | [Snapmaker Stock](https://wiki.snapmaker.com/en/snapmaker_u1/firmware/release_notes/v160) | 1.6.0.267 | `TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin` |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | [1.6.0-paxx12-22 — ön sürüm](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/releases/tag/u1-extended-1.6.0-paxx12-22-tr-r1) | `TURKISH_QUINRY_U1_extended_1.6.0-paxx12-22_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | `TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
 Bunlar tek başına dil paketi değil, kurulduklarında hedef kanal ve sürümü belirleyen tam firmware paketleridir. Aynı fiziksel Snapmaker U1 üzerinde **resmî İngilizce Stock 1.6.0.267 → Türkçe Extended 1.4.1 → Türkçe Extended 1.5.2 → Türkçe Stock 1.6.0.267** sırası başarıyla yüklenmiş ve cihaz her adımda açılmıştır. Bu sonuç yalnız belirtilen tek cihaz ve sıra için flash/boot/Türkçe arayüz smoke testidir; başka sürüm veya sıraların doğrulandığı anlamına gelmez. Kurmak istediğiniz hedef release'i dosya adı ve SHA-256 değeriyle seçin, test kapsamını ilgili release notundan okuyun.
+
+Extended 1.6.0-paxx12-22 bu test sırasına dahil değildir; kaynak yayın gibi ön sürümdür ve Türkçe paketi henüz fiziksel yazıcıda denenmemiştir.
 
 ## Güvenli kurulum özeti
 
@@ -85,7 +88,7 @@ Orijinal firmware, ayıklanmış rootfs veya çalışma klasörleri Git geçmiş
 
 ## Teşekkür / Credits
 
-Extended 1.4.1 ve 1.5.2 tabanlarını yayımlayan [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) projesine ve katkıda bulunanlara teşekkürler. Bu depo, Extended Firmware üzerindeki özgün geliştirme için sahiplik iddiasında bulunmaz; burada sunulan çalışma Türkçe yerelleştirme, paketleme ve doğrulama katmanıdır.
+Extended 1.4.1, 1.5.2 ve 1.6.0 tabanlarını yayımlayan [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) projesine ve katkıda bulunanlara teşekkürler. Bu depo, Extended Firmware üzerindeki özgün geliştirme için sahiplik iddiasında bulunmaz; burada sunulan çalışma Türkçe yerelleştirme, paketleme ve doğrulama katmanıdır.
 
 ## Sorumluluk ve üçüncü taraf hakları
 
@@ -104,6 +107,8 @@ Bir sorun bildirirken cihaz modelini, kurulu kanal ve sürümü, kullandığın�
 This is a free, non-profit and unofficial community localization for the Snapmaker U1 touchscreen. It adds Turkish as a separate `tr-TR` locale without replacing the existing languages.
 
 Download a build only from [GitHub Releases](../../releases), select the intended target Stock or Extended release, and compare the complete SHA-256 value before flashing. These are complete firmware images rather than standalone language packs. On one physical U1, the exact sequence **official English Stock 1.6.0.267 → Turkish Extended 1.4.1 → Turkish Extended 1.5.2 → Turkish Stock 1.6.0.267** was installed successfully and the printer booted after every step. This is a user-reported, single-device flash/boot/Turkish-UI smoke test, not proof for other versions, orders, full print cycles, or comprehensive regression. Read the [installation](docs/INSTALL.md) and [verification](docs/VERIFY.md) guides.
+
+Extended 1.6.0-paxx12-22 is a prerelease, matching its upstream status; its Turkish build has not yet been tested on a physical printer and is not part of the sequence above.
 
 Extended-based releases use firmware published by the [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) project. Credit for the original Extended Firmware work belongs to its maintainers and contributors.
 

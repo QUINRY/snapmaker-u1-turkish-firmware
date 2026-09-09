@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "release_id": "extended-1.6.0-paxx12-22",
+  "product": "Snapmaker U1",
+  "channel": "extended",
+  "extended_base": "paxx12-22",
+  "upstream_release": {
+    "url": "https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/v1.6.0-paxx12-22",
+    "tag": "v1.6.0-paxx12-22",
+    "prerelease_at_localization": true
+  },
+  "upfile": {
+    "version": "1.6.0.26731c5a38",
+    "build_date": "20260815150420"
+  },
+  "source_firmware": {
+    "filename": "U1_extended_1.6.0-paxx12-22_upgrade.bin",
+    "size_bytes": 247180032,
+    "sha256": "EEA907C22847B6F165640F0AE5E835CA42181F7A39B722FF062FD138D47A689C"
+  },
+  "release_asset": {
+    "filename": "TURKISH_QUINRY_U1_extended_1.6.0-paxx12-22_upgrade.bin",
+    "size_bytes": 247270144,
+    "sha256": "812A9496460715DB94456D2B1FD68436C158206E42A03BB5369E16301884E3B6"
+  },
+  "localization": {
+    "locale": "tr-TR",
+    "display_name": "Türkçe",
+    "position": 7,
+    "existing_locales_preserved": 6,
+    "encoding": "UTF-8",
+    "normalization": "NFC",
+    "bom": false,
+    "main_entries": 550,
+    "error_entries": 458,
+    "source_english_reextracted": true,
+    "exact_english_key_and_value_matches_reused": 1008,
+    "new_or_changed_english_entries": 0,
+    "main_sha256": "B4AA86B72C88CEB35A7600C96E0F343904006A0A82E79EFA8C5B9888E1D187EC",
+    "errors_sha256": "81D1FFF203CB79B08917C16FBFF1715C063019461156473296F7A964B7A912FD",
+    "patched_gui_sha256": "DF70EE929F80FDBBBA2F0F5348DBC38A6F30533756E73F40CB235352AB16D48B"
+  },
+  "package": {
+    "rootfs_size_bytes": 207745024,
+    "rootfs_partition_limit_bytes": 314572800,
+    "rootfs_sha256": "C71828B0FDD735E2CEF5F6557287DD0C77D7E8DD6A40A0D815DF0611EC6E538C",
+    "rkaf_sha256": "8F0E90A35BB0B1ECB1DE4643C58D1D6D8FBD8746BC91B008B3FEA67E6A8BB37E",
+    "rkfw_sha256": "816655B7A34BC2741E2036B43F167500F5AD6388AF46403A67A3A8F8422AFCEF",
+    "compression": "zstd",
+    "block_size_bytes": 131072,
+    "filesystem_timestamp": 1788809243,
+    "source_squashfs_flags": 192,
+    "output_squashfs_flags": 736,
+    "source_has_xattrs": false,
+    "informational_flags_changed": 544
+  },
+  "verification": {
+    "upfile_checksums_and_md5": true,
+    "rkfw_trailing_md5": true,
+    "rkaf_crc": true,
+    "fresh_unpack_all_layers": true,
+    "rootfs_only_gui_and_new_turkish_errors_changed": true,
+    "non_rootfs_partitions_unchanged": true,
+    "original_inode_metadata_preserved": true,
+    "final_gui_exact": true,
+    "final_exceptions_exact": true,
+    "gui_checks_passed": 80,
+    "gui_checks_total": 80,
+    "font_glyphs_checked": true,
+    "physical_flash_test_documented": false,
+    "physical_boot_test_documented": false,
+    "physical_screen_test_documented": false,
+    "full_print_cycle_test_documented": false,
+    "full_ui_regression_test_documented": false,
+    "long_term_stability_test_documented": false
+  },
+  "project": {
+    "noncommercial_maintainer_intent": true,
+    "unofficial": true,
+    "original_work_license": "GPL-3.0-only",
+    "third_party_components_retain_their_own_licenses": true
+  },
+  "warning": "Bu dosya Extended 1.6.0-paxx12-22 tam firmware paketidir. Kaynak yayın ön sürümdür. Bu yeni dosyanın fiziksel yazıcıda yükleme/açılış testi henüz bildirilmemiştir."
+}
