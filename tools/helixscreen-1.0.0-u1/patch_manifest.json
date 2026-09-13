@@ -1,0 +1,240 @@
+{
+  "source_sha256": "e570921f12b94174dc3cea8063ec44b2a645e32a6d133e482d5fab4da04c19ae",
+  "output_sha256": "20a921722f24fefec6b74496ddbf34c83a411e1e2fce2ac252ff162440644cd1",
+  "source_size": 15155112,
+  "output_size": 15782162,
+  "addresses": {
+    "array": 15962112,
+    "welcome": 15962192,
+    "trcode": 15962272,
+    "trwelcome": 15962275,
+    "options": 15962290,
+    "segment": 15335424,
+    "segment_file_offset": 15155200
+  },
+  "original_relocations": 26024,
+  "added_relocations": 20,
+  "changes": [
+    {
+      "offset": 3929684,
+      "size": 4,
+      "before": "41540090",
+      "after": "c15b00d0",
+      "reason": "settings index-to-code table page"
+    },
+    {
+      "offset": 3929688,
+      "size": 4,
+      "before": "21a02291",
+      "after": "21000091",
+      "reason": "settings index-to-code table offset"
+    },
+    {
+      "offset": 3932248,
+      "size": 4,
+      "before": "355400f0",
+      "after": "d55b00b0",
+      "reason": "settings code-to-index table page"
+    },
+    {
+      "offset": 3932252,
+      "size": 4,
+      "before": "b5a22291",
+      "after": "b5020091",
+      "reason": "settings code-to-index table offset"
+    },
+    {
+      "offset": 6750400,
+      "size": 4,
+      "before": "164000d0",
+      "after": "564600b0",
+      "reason": "wizard language code table page"
+    },
+    {
+      "offset": 6750408,
+      "size": 4,
+      "before": "c0823b91",
+      "after": "c0020091",
+      "reason": "wizard language code table offset"
+    },
+    {
+      "offset": 6750448,
+      "size": 4,
+      "before": "d6823b91",
+      "after": "d6020091",
+      "reason": "wizard persistent language code table"
+    },
+    {
+      "offset": 6750404,
+      "size": 4,
+      "before": "034000d0",
+      "after": "434600b0",
+      "reason": "wizard welcome logging table page"
+    },
+    {
+      "offset": 6750412,
+      "size": 4,
+      "before": "63a03c91",
+      "after": "63400191",
+      "reason": "wizard welcome logging table offset"
+    },
+    {
+      "offset": 6703700,
+      "size": 4,
+      "before": "614000d0",
+      "after": "a14600b0",
+      "reason": "wizard welcome cycle table page"
+    },
+    {
+      "offset": 6703704,
+      "size": 4,
+      "before": "21a03c91",
+      "after": "21400191",
+      "reason": "wizard welcome cycle table offset"
+    },
+    {
+      "offset": 5833800,
+      "size": 4,
+      "before": "013400b0",
+      "after": "414d00b0",
+      "reason": "settings dropdown options first caller page"
+    },
+    {
+      "offset": 5833804,
+      "size": 4,
+      "before": "21f80791",
+      "after": "21c80291",
+      "reason": "settings dropdown options first caller offset"
+    },
+    {
+      "offset": 6205624,
+      "size": 4,
+      "before": "213100d0",
+      "after": "614a00d0",
+      "reason": "settings dropdown options second caller page"
+    },
+    {
+      "offset": 6205628,
+      "size": 4,
+      "before": "21f80791",
+      "after": "21c80291",
+      "reason": "settings dropdown options second caller offset"
+    },
+    {
+      "offset": 3929644,
+      "size": 4,
+      "before": "1f200071",
+      "after": "1f240071",
+      "reason": "settings index bound tenth locale"
+    },
+    {
+      "offset": 3932276,
+      "size": 4,
+      "before": "7f2600f1",
+      "after": "7f2a00f1",
+      "reason": "settings search ten locales"
+    },
+    {
+      "offset": 6750308,
+      "size": 4,
+      "before": "1f200071",
+      "after": "1f240071",
+      "reason": "wizard index bound tenth locale"
+    },
+    {
+      "offset": 6703676,
+      "size": 4,
+      "before": "21018052",
+      "after": "41018052",
+      "reason": "welcome cycle divisor ten"
+    },
+    {
+      "offset": 6703692,
+      "size": 4,
+      "before": "210c010b",
+      "after": "2108010b",
+      "reason": "welcome quotient multiply five"
+    },
+    {
+      "offset": 6703696,
+      "size": 4,
+      "before": "0000014b",
+      "after": "0004014b",
+      "reason": "welcome modulo ten remainder"
+    },
+    {
+      "offset": 400,
+      "size": 56,
+      "before": "04000000040000007cf5e200000000007cf5e200000000007cf5e20000000000940000000000000094000000000000000400000000000000",
+      "after": "01000000060000000040e700000000000000ea00000000000000ea0000000000129109000000000012910900000000000010000000000000",
+      "reason": "append RW PT_LOAD in optional ABI/build-package PT_NOTE slot"
+    },
+    {
+      "offset": 15134432,
+      "size": 8,
+      "before": "1040000000000000",
+      "after": "0001ea0000000000",
+      "reason": "update dynamic tag 7"
+    },
+    {
+      "offset": 15134448,
+      "size": 8,
+      "before": "c087090000000000",
+      "after": "a089090000000000",
+      "reason": "update dynamic tag 8"
+    },
+    {
+      "offset": 15134544,
+      "size": 8,
+      "before": "0b65000000000000",
+      "after": "1f65000000000000",
+      "reason": "update dynamic tag 1879048185"
+    },
+    {
+      "offset": 15153656,
+      "size": 8,
+      "before": "1040000000000000",
+      "after": "0001ea0000000000",
+      "reason": "update relocation section header"
+    },
+    {
+      "offset": 15153664,
+      "size": 8,
+      "before": "1040000000000000",
+      "after": "0041e70000000000",
+      "reason": "update relocation section header"
+    },
+    {
+      "offset": 15153672,
+      "size": 8,
+      "before": "c087090000000000",
+      "after": "a089090000000000",
+      "reason": "update relocation section header"
+    }
+  ],
+  "existing_locales": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "pt",
+    "it",
+    "zh",
+    "ja"
+  ],
+  "added_locale": "tr",
+  "locale_count": 10,
+  "welcome_text": [
+    "Welcome!",
+    "Willkommen!",
+    "Bienvenue!",
+    "¡Bienvenido!",
+    "Добро пожаловать!",
+    "Bem-vindo!",
+    "Benvenuto!",
+    "欢迎！",
+    "ようこそ！",
+    "Hoş geldiniz!"
+  ]
+}

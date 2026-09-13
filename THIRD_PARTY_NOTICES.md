@@ -14,6 +14,10 @@ Bu depodaki Extended tabanlı Türkçe sürümler, [paxx12-snapmaker-u1/Snapmake
 
 Stock ve Extended assetleri ayrı tam firmware çıktılarıdır ve kendi dosya adı, sürüm, boyut ve SHA-256 değerleriyle tanımlanır. Bu lisans ve atıf ayrımı, kanallar arasında teknik geçiş yapılamadığı anlamına gelmez.
 
+## HelixScreen
+
+Extended 2.0.0 paketindeki isteğe bağlı dokunmatik arayüz, [prestonbrown/helixscreen v1.0.0](https://github.com/prestonbrown/helixscreen/tree/v1.0.0) kaynağına dayanır. Özgün kod, kaynak projenin lisans ve telif bildirimlerini korur. Türkçe ekleme için kullanılan [yeniden üretim araçları](tools/helixscreen-1.0.0-u1), [Türkçe kaynak](translations/helixscreen/1.0.0-snapmaker-u1/tr.xml) ve sürüme sabitlenmiş dosya hash'leri bu depoda yer alır. HelixScreen'in özgün geliştiricilerine ve katkıda bulunanlara teşekkürler.
+
 ## Bu deponun lisansı
 
 `GPL-3.0-only`, yalnızca bu deponun katkı sahiplerinin hak sahibi olduğu özgün içeriklere uygulanır; örneğin özgün Türkçe çeviriler, yeniden paketleme/doğrulama araçları ve proje belgeleri.

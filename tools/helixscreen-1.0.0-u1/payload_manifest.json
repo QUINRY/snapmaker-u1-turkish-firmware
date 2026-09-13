@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "platform": "snapmaker-u1",
+  "source_archive_sha256": "49c9aae95c1be859ea6d75691f55dc8d69cc0bd679da6cf1d58d9ca14a82844a",
+  "files": [
+    {
+      "path": "ui_xml/translations/tr.xml",
+      "source_sha256": null,
+      "sha256": "e7594151ea7f710474f13797b0b03eaf3bc62b4219beeee3ff832ab81849843d",
+      "mode": 420
+    },
+    {
+      "path": "ui_xml/translations/translations.xml",
+      "source_sha256": "128611771c8bdd73717ec5f30996cb3376119e2b73087b2de06829d5a1a2153d",
+      "sha256": "07c39784d7c1b7dd73ee4d9705b20462436d0be5b7f3f083ea6d5724aef0f108",
+      "mode": 420
+    },
+    {
+      "path": "ui_xml/wizard_language_chooser.xml",
+      "source_sha256": "0860c10bb599b30a6742da4f9068786541224e518720a5ba2955033b43b68f45",
+      "sha256": "9780f119603e324d6d781562ab114da7d314734fc78992f8e9635c924f8efecd",
+      "mode": 420
+    },
+    {
+      "path": "bin/helix-screen",
+      "source_sha256": "e570921f12b94174dc3cea8063ec44b2a645e32a6d133e482d5fab4da04c19ae",
+      "sha256": "20a921722f24fefec6b74496ddbf34c83a411e1e2fce2ac252ff162440644cd1",
+      "mode": 493
+    }
+  ]
+}

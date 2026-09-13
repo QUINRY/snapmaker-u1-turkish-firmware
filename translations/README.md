@@ -4,6 +4,8 @@ The versioned directories contain only the reviewed Turkish localization tables 
 
 - `stock/1.6.0.267/tr-TR`
 - `extended/1.6.0-paxx12-22/tr-TR`
+- `extended/2.0.0-paxx12-develop-7188aab/tr-TR`
+- `helixscreen/1.0.0-snapmaker-u1/tr.xml` (2,868 entries; separate optional touchscreen UI)
 - `extended/1.5.2-paxx12-21/tr-TR`
 - `extended/1.4.1-paxx12-20/tr-TR`
 

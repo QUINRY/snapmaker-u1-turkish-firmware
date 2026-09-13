@@ -4,3 +4,6 @@
 *.png -text
 *.gif -text
 *.bin -text
+# Preserve the exact bytes of hash-pinned HelixScreen firmware payload sources.
+translations/helixscreen/1.0.0-snapmaker-u1/tr.xml -text whitespace=cr-at-eol
+tools/helixscreen-1.0.0-u1/payload_manifest.json -text whitespace=cr-at-eol

@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Install the hash-pinned U1 HelixScreen Turkish payload without changing settings.
+
+Copyright (C) 2026 QUINRY
+SPDX-License-Identifier: GPL-3.0-only
+"""
+import hashlib
+import json
+import os
+from pathlib import Path
+import stat
+import sys
+import tempfile
+
+APP_BASE = Path('/oem/apps/helixscreen')
+PAYLOAD = Path('/usr/local/share/helixscreen-turkish')
+VERSION = 'helixscreen-1.0.0'
+ARCHIVE_SHA256 = '49c9aae95c1be859ea6d75691f55dc8d69cc0bd679da6cf1d58d9ca14a82844a'
+REQUIRED_PATHS = frozenset(('bin/helix-screen', 'ui_xml/translations/tr.xml',
+    'ui_xml/translations/translations.xml', 'ui_xml/wizard_language_chooser.xml'))
+ALLOWED_PATHS = REQUIRED_PATHS | frozenset(('assets/images/flags/flag_tr.bin',
+    'assets/images/flags/flag_tr.png'))
+
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def resolved_target(target, app_base):
+    base = app_base.absolute()
+    require(base.resolve(strict=True) == base, 'Application base contains a symlink')
+    target = Path(target).absolute()
+    allowed = (base / VERSION, base / 'tmp' / VERSION)
+    require(target in allowed + (base / 'latest',), 'Unexpected application directory')
+    resolved = target.resolve(strict=True)
+    require(resolved in allowed, 'Application directory resolves outside pinned version')
+    if target != base / 'latest':
+        require(target == resolved, 'Unexpected application directory symlink')
+    require(resolved.is_dir(), 'Application directory missing')
+    return resolved
+
+
+def checked_path(root, relative):
+    rel = Path(relative)
+    require(not rel.is_absolute() and '..' not in rel.parts and rel.parts,
+            'Invalid payload path')
+    path = root / rel
+    require(path.parent.resolve(strict=True) == path.parent, 'Symlink in target parent')
+    require(not path.is_symlink(), 'Symlink target refused')
+    require(not path.exists() or path.is_file(), 'Non-file target refused')
+    return path
+
+
+def stage(path, data, mode, ownership):
+    descriptor, name = tempfile.mkstemp(prefix='.quinry-tr-', dir=str(path.parent))
+    staged = Path(name)
+    try:
+        with os.fdopen(descriptor, 'wb') as stream:
+            stream.write(data)
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.chmod(str(staged), mode)
+        if ownership is not None and hasattr(os, 'chown'):
+            os.chown(str(staged), ownership[0], ownership[1])
+        require(staged.read_bytes() == data, 'Staged payload verification failed')
+        return staged
+    except BaseException:
+        staged.unlink(missing_ok=True)
+        raise
+
+
+def install(target, payload=PAYLOAD, app_base=APP_BASE):
+    root = resolved_target(target, Path(app_base))
+    payload = Path(payload).resolve(strict=True)
+    manifest = json.loads((payload / 'manifest.json').read_text(encoding='utf-8'))
+    require(manifest['schema'] == 1 and manifest['version'] == '1.0.0', 'Unexpected manifest')
+    require(manifest['platform'] == 'snapmaker-u1' and
+            manifest['source_archive_sha256'] == ARCHIVE_SHA256, 'Unexpected HelixScreen source')
+    records = manifest['files']
+    require(records and records[-1]['path'] == 'bin/helix-screen', 'Executable must be last')
+    require(len({record['path'] for record in records}) == len(records), 'Duplicate payload path')
+    paths = {record['path'] for record in records}
+    require(REQUIRED_PATHS <= paths <= ALLOWED_PATHS, 'Unexpected payload file list')
+    operations = []
+    for record in records:
+        destination = checked_path(root, record['path'])
+        incoming = checked_path(payload, record['path']).read_bytes()
+        require(sha256(incoming) == record['sha256'], 'Payload checksum mismatch: ' + record['path'])
+        original = destination.read_bytes() if destination.exists() else None
+        old_digest = sha256(original) if original is not None else None
+        require(old_digest in (record['source_sha256'], record['sha256']),
+                'Unknown or customized target: ' + record['path'])
+        if old_digest == record['sha256']:
+            continue
+        file_stat = destination.stat() if original is not None else destination.parent.stat()
+        mode = stat.S_IMODE(file_stat.st_mode) if original is not None else record['mode']
+        if record['path'] == 'bin/helix-screen':
+            require(mode & 0o111, 'Source executable has no execute permission')
+        ownership = (file_stat.st_uid, file_stat.st_gid)
+        operations.append((destination, incoming, mode, ownership))
+
+    # Validate every resource first, then stage every replacement. Existing files
+    # remain intact on validation/copy failure. Each publish is atomic; assets
+    # precede the executable, so an interruption leaves a runnable old/new binary.
+    # Both hashes are accepted on retry, recovering a partially published update.
+    staged_files = []
+    try:
+        for destination, incoming, mode, ownership in operations:
+            staged_files.append((destination, stage(destination, incoming, mode, ownership)))
+        for destination, temporary in staged_files:
+            os.replace(str(temporary), str(destination))
+            if hasattr(os, 'O_DIRECTORY'):
+                directory = os.open(str(destination.parent), os.O_RDONLY | os.O_DIRECTORY)
+                try:
+                    os.fsync(directory)
+                finally:
+                    os.close(directory)
+    finally:
+        for _, temporary in staged_files:
+            temporary.unlink(missing_ok=True)
+    return len(operations)
+
+
+def main():
+    if len(sys.argv) != 2:
+        print('Usage: helixscreen-turkish-install <pinned-install-directory>', file=sys.stderr)
+        return 2
+    try:
+        count = install(sys.argv[1])
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        print('HelixScreen Turkish skipped: ' + str(error), file=sys.stderr)
+        return 1
+    if count:
+        print('HelixScreen Turkish installed; other languages and settings preserved.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
