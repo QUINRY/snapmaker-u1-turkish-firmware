@@ -1,5 +1,8 @@
 # Snapmaker U1 Extended 2.0.0-paxx12-develop-7188aab — Türkçe
 
+> [!WARNING]
+> Bu r1 paketi HelixScreen kurulumu düşük bellekli cihazlarda başarısız olabildiği için **r2 ile değiştirilmiştir**. Yeni kurulumlarda [r2 düzeltme yayınını](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/releases/tag/u1-extended-2.0.0-paxx12-develop-7188aab-tr-r2) kullanın. r1 yalnızca tarihçe amacıyla korunur.
+
 Snapmaker U1'in **2.0.0 rolling/develop** sürümüne, hem Snapmaker hem de isteğe bağlı **HelixScreen 1.0.0** arayüzünde Türkçe desteği ekler. Mevcut diller korunur. Ücretsiz ve kâr amacı gütmeyen, resmî olmayan bir topluluk çalışmasıdır.
 
 > **Kaynak / Credits:** [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/rolling) projesine ve katkıda bulunanlara teşekkürler. Bu paket standart Extended çeşidinin **7188aab** derlemesine dayanır. Kaynak rolling yayını güncellenebilir; buradaki Türkçe dosya belirtilen derlemeye sabitlenmiştir ve **Pre-release** olarak yayımlanır.
