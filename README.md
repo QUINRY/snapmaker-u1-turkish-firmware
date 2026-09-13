@@ -59,7 +59,7 @@ Desteklenen kanallar birbirinden ayrıdır:
 | --- | --- | --- |
 | [Snapmaker Stock](https://wiki.snapmaker.com/en/snapmaker_u1/firmware/release_notes/v160) | 1.6.0.267 | `TURKISH_QUINRY_U1_1.6.0.267_20260815150420_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | [1.6.0-paxx12-22 — ana sürüm](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/releases/tag/u1-extended-1.6.0-paxx12-22-tr-r1) | `TURKISH_QUINRY_U1_extended_1.6.0-paxx12-22_upgrade.bin` |
-| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | [2.0.0 develop 7188aab — ön sürüm](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/releases/tag/u1-extended-2.0.0-paxx12-develop-7188aab-tr-r1) | `TURKISH_QUINRY_U1_extended_2.0.0-paxx12-develop-7188aab_upgrade.bin` |
+| [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | [2.0.0 develop 7188aab — ön sürüm (r2)](https://github.com/QUINRY/snapmaker-u1-turkish-firmware/releases/tag/u1-extended-2.0.0-paxx12-develop-7188aab-tr-r2) | `TURKISH_QUINRY_U1_extended_2.0.0-paxx12-develop-7188aab_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.5.2-paxx12-21 | `TURKISH_QUINRY_U1_extended_1.5.2-paxx12-21_upgrade.bin` |
 | [Extended](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) | 1.4.1-paxx12-20 | `TURKISH_QUINRY_U1_extended_1.4.1-paxx12-20_upgrade.bin` |
 
@@ -67,7 +67,7 @@ Bunlar tek başına dil paketi değil, kurulduklarında hedef kanal ve sürümü
 
 Extended 1.6.0-paxx12-22 ana sürümdür. Kaynak dosya ön sürümden ana sürüme geçerken değişmediğinden doğrulanmış Türkçe paket aynıdır. Bu sürüm yukarıdaki fiziksel test sırasına dahil değildir.
 
-Extended 2.0.0 paketi, **rolling/develop 7188aab ön sürümüne** dayanır; 1.6.0 ana sürüm olarak kalır. **Hem Snapmaker arayüzü hem de isteğe bağlı HelixScreen 1.0.0 Türkçedir.** Türkçe, Snapmaker arayüzünde sekizinci; HelixScreen'de onuncu seçenektir. Mevcut diller korunur. HelixScreen seçildiğinde çeviri otomatik uygulanır; dil tercihinizi kendi ayarlarından Türkçe yapabilirsiniz. 2.0.0 Türkçe paketi henüz fiziksel yazıcıda test edilmemiştir.
+Extended 2.0.0 paketi, **rolling/develop 7188aab ön sürümüne** dayanır; 1.6.0 ana sürüm olarak kalır. **Hem Snapmaker arayüzü hem de isteğe bağlı HelixScreen 1.0.0 Türkçedir.** Türkçe, Snapmaker arayüzünde sekizinci; HelixScreen'de onuncu seçenektir. Mevcut diller korunur. HelixScreen seçildiğinde çeviri otomatik uygulanır; dil tercihinizi kendi ayarlarından Türkçe yapabilirsiniz. Düşük bellekli kurulum hatası için yayımlanan güncel paket **r2**’dir; r1 tarihçe amacıyla tutulur ve yeni kurulumlarda kullanılmamalıdır. 2.0.0 Türkçe paketi henüz fiziksel yazıcıda test edilmemiştir.
 
 ## Güvenli kurulum özeti
 
@@ -115,7 +115,7 @@ Download a build only from [GitHub Releases](../../releases), select the intende
 
 Extended 1.6.0-paxx12-22 is a stable release. Its upstream binary did not change when promoted from prerelease, so the verified Turkish binary is unchanged. Its Turkish build has not yet been tested on a physical printer and is not part of the sequence above.
 
-Extended 2.0.0 is based on the **rolling/develop 7188aab prerelease**, not a stable release. It localizes both the default Snapmaker UI and optional HelixScreen 1.0.0. Turkish is added as the eighth and tenth language respectively, preserving all existing languages. The HelixScreen overlay is applied automatically only to the exact pinned version; user settings are unchanged. Physical-printer testing of this Turkish build has not yet been reported. Extended 1.6.0 remains the latest stable release.
+Extended 2.0.0 is based on the **rolling/develop 7188aab prerelease**, not a stable release. It localizes both the default Snapmaker UI and optional HelixScreen 1.0.0. Turkish is added as the eighth and tenth language respectively, preserving all existing languages. The HelixScreen overlay is applied automatically only to the exact pinned version; user settings are unchanged. Release **r2** fixes the low-memory installer failure reported by users; r1 remains only as historical traceability. Physical-printer testing of this Turkish build has not yet been reported. Extended 1.6.0 remains the latest stable release.
 
 Extended-based releases use firmware published by the [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware) project. Credit for the original Extended Firmware work belongs to its maintainers and contributors.
 

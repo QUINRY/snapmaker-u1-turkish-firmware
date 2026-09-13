@@ -27,8 +27,12 @@ def require(condition, message):
         raise ValueError(message)
 
 
-def sha256(data):
-    return hashlib.sha256(data).hexdigest()
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open('rb') as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def resolved_target(target, app_base):
@@ -56,18 +60,22 @@ def checked_path(root, relative):
     return path
 
 
-def stage(path, data, mode, ownership):
+def stage(path, source, expected_digest, mode, ownership):
     descriptor, name = tempfile.mkstemp(prefix='.quinry-tr-', dir=str(path.parent))
     staged = Path(name)
     try:
         with os.fdopen(descriptor, 'wb') as stream:
-            stream.write(data)
+            digest = hashlib.sha256()
+            with source.open('rb') as incoming:
+                for chunk in iter(lambda: incoming.read(1024 * 1024), b''):
+                    stream.write(chunk)
+                    digest.update(chunk)
             stream.flush()
             os.fsync(stream.fileno())
+        require(digest.hexdigest() == expected_digest, 'Staged payload verification failed')
         os.chmod(str(staged), mode)
         if ownership is not None and hasattr(os, 'chown'):
             os.chown(str(staged), ownership[0], ownership[1])
-        require(staged.read_bytes() == data, 'Staged payload verification failed')
         return staged
     except BaseException:
         staged.unlink(missing_ok=True)
@@ -89,20 +97,20 @@ def install(target, payload=PAYLOAD, app_base=APP_BASE):
     operations = []
     for record in records:
         destination = checked_path(root, record['path'])
-        incoming = checked_path(payload, record['path']).read_bytes()
-        require(sha256(incoming) == record['sha256'], 'Payload checksum mismatch: ' + record['path'])
-        original = destination.read_bytes() if destination.exists() else None
-        old_digest = sha256(original) if original is not None else None
+        incoming = checked_path(payload, record['path'])
+        require(sha256_file(incoming) == record['sha256'], 'Payload checksum mismatch: ' + record['path'])
+        old_digest = sha256_file(destination) if destination.exists() else None
         require(old_digest in (record['source_sha256'], record['sha256']),
                 'Unknown or customized target: ' + record['path'])
         if old_digest == record['sha256']:
             continue
-        file_stat = destination.stat() if original is not None else destination.parent.stat()
-        mode = stat.S_IMODE(file_stat.st_mode) if original is not None else record['mode']
+        file_exists = destination.exists()
+        file_stat = destination.stat() if file_exists else destination.parent.stat()
+        mode = stat.S_IMODE(file_stat.st_mode) if file_exists else record['mode']
         if record['path'] == 'bin/helix-screen':
             require(mode & 0o111, 'Source executable has no execute permission')
         ownership = (file_stat.st_uid, file_stat.st_gid)
-        operations.append((destination, incoming, mode, ownership))
+        operations.append((destination, incoming, record['sha256'], mode, ownership))
 
     # Validate every resource first, then stage every replacement. Existing files
     # remain intact on validation/copy failure. Each publish is atomic; assets
@@ -110,8 +118,8 @@ def install(target, payload=PAYLOAD, app_base=APP_BASE):
     # Both hashes are accepted on retry, recovering a partially published update.
     staged_files = []
     try:
-        for destination, incoming, mode, ownership in operations:
-            staged_files.append((destination, stage(destination, incoming, mode, ownership)))
+        for destination, incoming, expected_digest, mode, ownership in operations:
+            staged_files.append((destination, stage(destination, incoming, expected_digest, mode, ownership)))
         for destination, temporary in staged_files:
             os.replace(str(temporary), str(destination))
             if hasattr(os, 'O_DIRECTORY'):

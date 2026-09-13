@@ -98,6 +98,15 @@ class InstallerTests(unittest.TestCase):
             self.install()
         self.assertEqual(self.snapshot(), before)
 
+    def test_large_executable_is_streamed_not_materialized(self):
+        original_read_bytes = Path.read_bytes
+        def refuse_large_materialization(path):
+            if path.name == 'helix-screen':
+                raise AssertionError('helix-screen must be streamed under the device memory limit')
+            return original_read_bytes(path)
+        with patch.object(Path, 'read_bytes', autospec=True, side_effect=refuse_large_materialization):
+            self.assertEqual(self.install(), 4)
+
     def test_corrupt_payload_refused_without_changes(self):
         (self.payload / 'bin/helix-screen').write_bytes(b'corrupted')
         before = self.snapshot()

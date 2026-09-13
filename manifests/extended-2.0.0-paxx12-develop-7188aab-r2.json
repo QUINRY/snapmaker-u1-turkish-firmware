@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "release_id": "extended-2.0.0-paxx12-develop-7188aab-r2",
+  "product": "Snapmaker U1",
+  "channel": "extended",
+  "extended_base": "paxx12-develop-7188aab",
+  "upstream_release": {
+    "url": "https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/rolling",
+    "tag": "rolling",
+    "source_commit": "7188aab2fc8c671bc467925a0ad8cdea6d8668f1",
+    "prerelease_at_localization": true,
+    "build_channel": "develop",
+    "variant": "standard",
+    "snapshot_date": "2026-09-13"
+  },
+  "upfile": {
+    "version": "2.0.0.2047188aab",
+    "build_date": "20260907182340"
+  },
+  "source_firmware": {
+    "filename": "U1_extended_2.0.0-paxx12-develop-7188aab_upgrade.bin",
+    "size_bytes": 250415876,
+    "sha256": "FCFDD99CA6D6B4C3B7566BDA625A2C24FF8F7C359A073F151E3E073080647976"
+  },
+  "release_asset": {
+    "filename": "TURKISH_QUINRY_U1_extended_2.0.0-paxx12-develop-7188aab_upgrade.bin",
+    "size_bytes": 256600836,
+    "sha256": "828588305BAA882CBA676A0066D5411174B55C867E0318AEDA4EE1A90C599DCB"
+  },
+  "localization": {
+    "locale": "tr-TR",
+    "display_name": "Türkçe",
+    "position": 8,
+    "enum": 7,
+    "existing_locales_preserved": 7,
+    "encoding": "UTF-8",
+    "normalization": "NFC",
+    "bom": false,
+    "main_entries": 550,
+    "error_entries": 466,
+    "source_english_reextracted": true,
+    "exact_english_key_and_value_matches_reused": 989,
+    "new_or_changed_english_entries": 27,
+    "main_sha256": "1AD34EE9BD210D15CED0006ADA29BDD663CB086DFAEAE2B615FA9319C973F557",
+    "errors_sha256": "E86C7675F698F1F05D4C2EF23154E29A53D679D50052AFD8A27040F6CFC16C20",
+    "patched_gui_sha256": "E06CCAFBCC673CF0FAE804D96FCD2D4384AD6AF0819A75CD29FEBC9B3D04B05E",
+    "touchscreen_gui": "snapmaker",
+    "optional_helixscreen_modified": true
+  },
+  "helixscreen": {
+    "version": "1.0.0",
+    "platform": "snapmaker-u1",
+    "source_release": "https://github.com/prestonbrown/helixscreen/releases/tag/v1.0.0",
+    "source_commit": "1ff78eb4ff91d5975ef55f6f37091622e3cec923",
+    "source_archive_sha256": "49c9aae95c1be859ea6d75691f55dc8d69cc0bd679da6cf1d58d9ca14a82844a",
+    "locale": "tr",
+    "display_name": "Türkçe",
+    "position": 10,
+    "existing_locales_preserved": 9,
+    "entries": 2868,
+    "fresh_translations": 23,
+    "exact_english_matches_reused": 2845,
+    "original_download_and_checksum_preserved": true,
+    "install_hook_and_existing_install_support": true,
+    "unknown_versions_left_unchanged": true,
+    "user_settings_untouched": true,
+    "installer_verification": {
+      "passed": true,
+      "unit_tests_run": 13,
+      "unit_tests_passed": 12,
+      "unit_tests_skipped": [
+        {
+          "test": "test_symlink_file_refused (test_installer.InstallerTests.test_symlink_file_refused)",
+          "reason": "Windows file-symlink privilege unavailable; directory-link checks ran using NTFS junctions."
+        }
+      ],
+      "host": "nt",
+      "posix_permissions_modeled_on_windows": true,
+      "real_pinned_package_fixture": true,
+      "real_package_file_count": 871,
+      "changed": [
+        "bin/helix-screen",
+        "ui_xml/translations/translations.xml",
+        "ui_xml/wizard_language_chooser.xml"
+      ],
+      "added": [
+        "ui_xml/translations/tr.xml"
+      ],
+      "idempotent": true,
+      "settings_and_other_files_unchanged": true,
+      "payload_manifest_sha256": "5cbb3a74533e8058047631b33a6798d4f9a6df6b8e400751b5458e37789377ca",
+      "installer_sha256": "f2901e97d123a9525bbf566b6a6d971baa63e406d034e315a26b18c43fb4ea01"
+    },
+    "native_gui_checks_passed": 41,
+    "native_gui_checks_total": 41,
+    "payload_files": [
+      {
+        "path": "ui_xml/translations/tr.xml",
+        "source_sha256": null,
+        "sha256": "e7594151ea7f710474f13797b0b03eaf3bc62b4219beeee3ff832ab81849843d",
+        "mode": 420
+      },
+      {
+        "path": "ui_xml/translations/translations.xml",
+        "source_sha256": "128611771c8bdd73717ec5f30996cb3376119e2b73087b2de06829d5a1a2153d",
+        "sha256": "07c39784d7c1b7dd73ee4d9705b20462436d0be5b7f3f083ea6d5724aef0f108",
+        "mode": 420
+      },
+      {
+        "path": "ui_xml/wizard_language_chooser.xml",
+        "source_sha256": "0860c10bb599b30a6742da4f9068786541224e518720a5ba2955033b43b68f45",
+        "sha256": "9780f119603e324d6d781562ab114da7d314734fc78992f8e9635c924f8efecd",
+        "mode": 420
+      },
+      {
+        "path": "bin/helix-screen",
+        "source_sha256": "e570921f12b94174dc3cea8063ec44b2a645e32a6d133e482d5fab4da04c19ae",
+        "sha256": "20a921722f24fefec6b74496ddbf34c83a411e1e2fce2ac252ff162440644cd1",
+        "mode": 493
+      }
+    ]
+  },
+  "package": {
+    "rootfs_size_bytes": 217075712,
+    "rootfs_partition_limit_bytes": 314572800,
+    "rootfs_sha256": "06026D6C97D4093DE59D729A1D92B13FE7219A07A421E6502E8B9A261A62FD2B",
+    "rkaf_sha256": "A5AA7BCE73BAA2AC3AC98AEA53999F7C53CCC93A8698348E4E3BCE176BC6D90B",
+    "rkfw_sha256": "51FB3387F7EE610F40ACF8B29DA1818AC1D6ABC58DB5B33AB3A8620B36A539B8",
+    "compression": "zstd",
+    "block_size_bytes": 131072,
+    "filesystem_timestamp": 1789137790,
+    "source_squashfs_flags": 192,
+    "output_squashfs_flags": 736,
+    "source_has_xattrs": false
+  },
+  "verification": {
+    "upfile_checksums_and_md5": true,
+    "rkfw_trailing_md5": true,
+    "rkaf_crc": true,
+    "fresh_unpack_all_layers": true,
+    "rootfs_only_approved_localization_files_changed": true,
+    "non_rootfs_partitions_unchanged": true,
+    "original_inode_metadata_preserved": true,
+    "final_gui_exact": true,
+    "final_exceptions_exact": true,
+    "gui_checks_passed": 85,
+    "gui_checks_total": 85,
+    "font_glyphs_checked": true,
+    "helixscreen_installer_real_package_fixture": true,
+    "physical_flash_test_documented": false,
+    "physical_boot_test_documented": false,
+    "physical_screen_test_documented": false,
+    "full_print_cycle_test_documented": false,
+    "full_ui_regression_test_documented": false,
+    "long_term_stability_test_documented": false
+  },
+  "project": {
+    "noncommercial_maintainer_intent": true,
+    "unofficial": true,
+    "original_work_license": "GPL-3.0-only",
+    "third_party_components_retain_their_own_licenses": true
+  },
+  "warning": "Bu paket 2.0.0 rolling/develop 7188aab anlık derlemesine dayanır; ana sürüm değildir. Türkçe dosyanın fiziksel yazıcıda yükleme/açılış testi henüz bildirilmemiştir."
+}
