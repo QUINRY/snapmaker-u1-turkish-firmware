@@ -7,7 +7,10 @@
   "upstream_release": {
     "url": "https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/v1.6.0-paxx12-22",
     "tag": "v1.6.0-paxx12-22",
-    "prerelease_at_localization": true
+    "prerelease_at_localization": true,
+    "prerelease_current": false,
+    "status_verified_on": "2026-09-13",
+    "stable_source_identical_to_prerelease": true
   },
   "upfile": {
     "version": "1.6.0.26731c5a38",
@@ -80,5 +83,5 @@
     "original_work_license": "GPL-3.0-only",
     "third_party_components_retain_their_own_licenses": true
   },
-  "warning": "Bu dosya Extended 1.6.0-paxx12-22 tam firmware paketidir. Kaynak yayın ön sürümdür. Bu yeni dosyanın fiziksel yazıcıda yükleme/açılış testi henüz bildirilmemiştir."
+  "warning": "Bu dosya Extended 1.6.0-paxx12-22 ana sürüm tabanlı tam firmware paketidir. Kaynak dosya ön sürümden ana sürüme geçerken değişmemiştir. Bu Türkçe dosyanın fiziksel yazıcıda yükleme/açılış testi henüz bildirilmemiştir."
 }

@@ -3,7 +3,7 @@
 ## Kaynak ve çıktı
 
 - Kaynak: [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware v1.6.0-paxx12-22](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/v1.6.0-paxx12-22)
-- Kaynak yayın 9 Eylül 2026 kontrolünde **Pre-release** durumundadır.
+- Kaynak yayın 9 Eylül 2026'da ön sürümdü; 13 Eylül 2026 kontrolünde **ana sürüme** geçtiği doğrulandı. Kaynak dosyanın boyutu ve SHA-256 değeri aynıdır; Türkçe çıktı değişmeden ana sürüm olarak sunulmaktadır.
 - Kaynak dosya: `U1_extended_1.6.0-paxx12-22_upgrade.bin`
 - Kaynak boyutu: `247180032` bayt
 - Kaynak SHA-256: `EEA907C22847B6F165640F0AE5E835CA42181F7A39B722FF062FD138D47A689C`

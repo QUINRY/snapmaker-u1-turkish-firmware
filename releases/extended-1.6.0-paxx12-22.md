@@ -2,7 +2,9 @@
 
 Snapmaker U1 dokunmatik ekranına Türkçe ekleyen, **Extended 1.6.0-paxx12-22** tabanlı firmware paketidir. Mevcut altı dil korunur; Türkçe ayrı bir `tr-TR` seçeneği olarak eklenir. Ücretsiz, kâr amacı gütmeyen ve resmî olmayan bir topluluk çalışmasıdır.
 
-> **Kaynak / Credits:** Extended firmware, [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/v1.6.0-paxx12-22) projesinin çalışmasıdır. Geliştiricilerine ve katkıda bulunanlara teşekkürler. Kaynak yayın ön sürüm olduğu için bu Türkçe yayın da **Pre-release** olarak sunulmaktadır.
+> **Kaynak / Credits:** Extended firmware, [paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware](https://github.com/paxx12-snapmaker-u1/SnapmakerU1-Extended-Firmware/releases/tag/v1.6.0-paxx12-22) projesinin çalışmasıdır. Geliştiricilerine ve katkıda bulunanlara teşekkürler. Kaynak yayınla birlikte bu Türkçe yayın da **ana sürüme** geçirilmiştir.
+
+13 Eylül 2026 kontrolünde kaynak dosyanın boyutu ve SHA-256 değerinin önceki ön sürümle aynı olduğu doğrulandı. Türkçe `.bin` aynıdır; ayrı bir ön sürüm kaydı tutulmaz ve mevcut indirme bağlantıları kullanılmaya devam eder.
 
 ## Hızlı kurulum
 
